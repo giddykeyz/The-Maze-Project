@@ -1,49 +1,31 @@
-The Maze project 
-The goal of this project is to create a game in 3D using raycasting !
+# Maze Project
 
-Template for Maze Project
+The maze project is an adaptation of the `Wolfenstein 1981` game. The project uses the concept of Raycasting to serve as the viewpoint of the player, giving it a first-person player view. Maps in the game are created using 2D-matrix arrays, which are seen when the player's raycast touch the blocks of the map.
+## Technologies Used
+- [**C Programming Language**](https://linuxconfig.org/how-to-install-gcc-the-c-compiler-on-ubuntu-20-04-lts-focal-fossa-linux) - The project was done using C programming language. The language is installed upon the installation of the gcc compiler on your Operating System (In this case, a Linux distro).
+- [**SDL2**](https://wiki.libsdl.org/Installation) - Known as `Simple DirectMedia Layer` is a cross-platform software development library designed to provide a hardware abstraction layer for computer multimedia hardware components. Software developers can use it to write high-performance computer games and other multimedia applications that can run on many operating systems such as Android, iOS, Linux, macOS, and Windows. ([Wikipedia](https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer)). In simple terms, it creates windows for any kind of media file, giving each window the ability to interact with the hardware components of a system(i.e Keyboard and mouse) and also the ability to quit, maximize or minimize each media file/application. This was used as the window that holds the entire functionality of the project.
+- [**Ubuntu 20.04LTS**](https://ubuntu.com/download/desktop) -
+The operating system used in this project. Ubuntu is a distro for the Linux Operating system.
 
- 1. Challenges:
-    Some of the challenges that I might face when doing the maze project :
-    Managing memory and pointer usage.
-    Writing efficient and robust code to ensure the maze project runs correctly and efficiently.
-    Debugging the code and finding errors in the code.
-    Writing code that can handle different types of input data.
-    Testing and verifying the code for accuracy and completeness.
+## Usage
+On the terminal run
+```
+make
+```
 
-  2.  Collaboration/Communication:
+This creates the executable file `raycast` (which is currently in this GitHub repository). Then run this to start up the application.
 
-    Establish clear roles and responsibilities for each team member
-    Define a communication plan and schedule
-    Set up a meeting or online workspace for collaboration
-
-    3. Project Updates:
-
-    Document project progress and accomplishments
-    Schedule regular meetings to review progress and discuss issues
-    Set up an online system for tracking project tasks and milestones.
-
-Progress:
-One the scale of 1-10 I rate my progress as 7.
-I'm measuring this based on readiness.
-Because I'm set for the project only few limitations.
-Will be putting effort to complete the project in the minimum possible time.
-			MVP (Minimum Viable Product) proposal
-
-1. Walls: Create a 2D array to represent the maze and draw walls using SDL2 graphics library. The walls should be represented by rectangles or lines.
- 
-2. Orientation: Use the arrow keys to control the movement and rotation of the player in the maze. You can use SDL_Event to handle user input.
- 
-3. Move: Implement basic movement logic for the player. Allow the player to move forward, backward, left, and right in the maze.
+```
+./raycast
+```
+![Maze_game](./images/Maze_game.png)
 
 
-4. Ouch: Add collision detection between the player and the walls. The player should not be able to move through the walls. If the player collides with a wall, stop the player's movement. 
-
-
-5. Parser: Create a simple parser to read the maze data from a text file and store it in a 2D array.
- 
-6. Draw the Map: Draw the maze using the maze data stored in the 2D array. You can use different colors for the walls and ground/ceiling to make them visually distinct.
- 
-7. Textures: Add basic textures to the walls using SDL2's texture rendering functions.
- 
-
+## Reference
+- [lazyfoo](http://lazyfoo.net/tutorials/SDL/index.php#Event%20Driven%20Programming)
+- [geeksforgeeks](https://www.geeksforgeeks.org/structure-vs-class-in-cpp/)
+- [permadi.com](https://permadi.com/1996/05/ray-casting-tutorial-1/)
+- [lodev.org](https://lodev.org/cgtutor/raycasting.html)
+- [cplusplus.com](https://cplusplus.com/forum/beginner/214311/)
+- [pikuma.com](https://pikuma.com/courses/raycasting-engine-tutorial-algorithm-javascript)
+- [3DSage/OpenGL-Raycaster](https://www.youtube.com/watch?v=gYRrGTC7GtA)
